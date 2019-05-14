@@ -6,15 +6,26 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <div id="game-area">
-            <button onclick=cycleQuestions()>start</button>
+        <header>
+            <div class="page">
+                <h1>Game of Thrones Questionare</h1>
+            </div>
+            <div class="clearfix"></div>
+        </header>
+
+        <div id="game-area" class="page">
+            <button class="set-difficulty" onclick=chooseDifficulty(60)>easy</button>
+            <button class="set-difficulty" onclick=chooseDifficulty(20)>normal</button>
+            <button class="set-difficulty" onclick=chooseDifficulty(10)>hard</button>
             <div id="time-area"></div>
             <div id="question-area"></div>
+            <div id="answer0" class="answers"></div>
             <div id="answer1" class="answers"></div>
             <div id="answer2" class="answers"></div>
             <div id="answer3" class="answers"></div>
-            <div id="answer4" class="answers"></div>
+            <div id="theScreen"></div>
         </div>
+
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="assets/javascript/app.js"></script>

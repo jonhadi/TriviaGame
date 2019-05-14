@@ -1,5 +1,32 @@
+.hide-me {
+    display: none;
+}
+
+.page {
+    width: 960px;
+    margin: auto;
+}
 
 
-#time-area {
-    float: left;
+header {
+    background: #ffffff;
+    border-color: #cccccc; 
+    width: 100%;
+    border-bottom: 3px solid #7777;
+}
+
+h1 {
+    background:rgba(255, 208, 0, 0.89);
+    color: #531111;
+    margin: auto;
+    border-bottom: 3px solid #7777;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
